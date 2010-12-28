@@ -1,0 +1,46 @@
+Summary
+-------
+Maven archetype providing a pre-configured Spring MVC setup out of the box. The setup represents how I like things configured so YMMV.
+
+This is my first archetype so feel free to send patches if you find something that can be improved.
+
+
+Contact
+-------
+Chris Schaefer - chris@dtzq.com
+
+
+Features
+--------
+Some features that work out of the box are:
+
+* Bare bones Spring MVC controller and test.
+* Tomcat ready (maven plugin and basic context.xml with JNDI datasource).
+* Annotation driven Spring MVC controllers.
+* Component scan configuration to automatically configure stereotype annotated beans.
+* Configured ContentNegotiatingViewResolver, with JSON as a registered media type.
+* JSTL view resolver.
+* Cookie based locale resolver / interceptor.
+* Annotation driven transaction support.
+* UTF-8 character encoding filter for web pages.
+* Spring taglib support.
+* i18n support via Spring MessageSource.
+* JNDI configured DataSource and JdbcTemplate and TransactionManager configuration.
+* PropertyPlaceholder support.
+
+
+Local Install
+-------------
+cd maven-springmvc-archetype
+mvn install
+
+
+Use
+---
+cd ~/work (or wherever you want to build to)
+mvn archetype:generate -DarchetypeGroupId=com.dtzq -DarchetypeArtifactId=maven-springmvc-archetype (specify -DarchetypeVersion= if you have multiple versions)
+mvn package
+
+A WAR ready for deployment will be in target/ as $artifactId.war.
+
+Answer the questions and the build will end up in a directory named after your artifact ID.
