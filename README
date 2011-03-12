@@ -38,7 +38,16 @@ mvn install
 Use
 ---
 cd ~/work (or wherever you want to build to)
-mvn archetype:generate -DarchetypeGroupId=com.dtzq -DarchetypeArtifactId=maven-springmvc-archetype (specify -DarchetypeVersion= if you have multiple versions)
+
+mvn archetype:generate -DarchetypeGroupId=com.dtzq \
+  -DarchetypeArtifactId=maven-springmvc-archetype \
+  -DarchetypeVersion=1.0-SNAPSHOT \
+  -DgroupId=com.dtzq \
+  -DartifactId=the_artifact_id \
+  -DpackageName=the_package_name \
+  -DjndiDataSource=data_source_name \
+  -DlogPath=/path/to/log.file
+
 mvn package
 
 A WAR ready for deployment will be in target/ as $artifactId.war.
