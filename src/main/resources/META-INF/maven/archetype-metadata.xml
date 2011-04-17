@@ -48,6 +48,7 @@
       <directory>src/test/java</directory>
       <includes>
         <include>**/*.java</include>
+        <include>**/*.html</include>
       </includes>
     </fileSet>
   </fileSets>
