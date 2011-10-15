@@ -7,8 +7,6 @@ import static junit.framework.Assert.*;
 
 import org.junit.Test;
 
-import ${groupId}.${artifactId}.ui.web.controller.IndexController;
-
 /**
  * <p>Test case for the index controller.</p>
  *
