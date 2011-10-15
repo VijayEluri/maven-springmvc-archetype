@@ -58,3 +58,4 @@ Answer the questions and the build will end up in a directory named after your a
 Change log:
 * Update version to 1.1-SNAPSHOT.
 * Removed webapp/static directory. Consider hosting these elsewhere.
+* Removed WEB-INF/classes and WEB-INF/lib, these should be generated / contents ignore by the generated project.
