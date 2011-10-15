@@ -56,10 +56,12 @@ Answer the questions and the build will end up in a directory named after your a
 
 
 Change log:
+--
+October 15, 2011
 * Update version to 1.1-SNAPSHOT.
 * Removed webapp/static directory. Consider hosting these elsewhere.
 * Removed WEB-INF/classes and WEB-INF/lib, these should be generated / contents ignore by the generated project.
 * Converted package.html files to package-info.java.
 * Removed unneeded imports.
 * Updated taglib prefix, update web.xml verson to 2.5.
-
+* Rename web-beans.xml to application-beans.xml. Minor change but seemed redundant due to the dispatcher servlet beans configuration.
