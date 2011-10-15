@@ -61,4 +61,5 @@ Change log:
 * Removed WEB-INF/classes and WEB-INF/lib, these should be generated / contents ignore by the generated project.
 * Converted package.html files to package-info.java.
 * Removed unneeded imports.
+* Updated taglib prefix, update web.xml verson to 2.5.
 
