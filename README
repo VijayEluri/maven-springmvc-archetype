@@ -59,3 +59,5 @@ Change log:
 * Update version to 1.1-SNAPSHOT.
 * Removed webapp/static directory. Consider hosting these elsewhere.
 * Removed WEB-INF/classes and WEB-INF/lib, these should be generated / contents ignore by the generated project.
+* Converted package.html files to package-info.java.
+
