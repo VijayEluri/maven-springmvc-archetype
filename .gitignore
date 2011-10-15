@@ -1,1 +1,4 @@
-/target
+target
+maven-springmvc-archetype.iml
+maven-springmvc-archetype.ipr
+maven-springmvc-archetype.iws
