@@ -66,3 +66,4 @@ October 15, 2011
 * Updated taglib prefix, update web.xml verson to 2.5.
 * Rename web-beans.xml to application-beans.xml. Minor change but seemed redundant due to the dispatcher servlet beans configuration.
 * Updated context path in context.xml to reflect the artifact id
+* Removed unused AOP namespace from datasource-beans.xml
