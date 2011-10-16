@@ -10,7 +10,7 @@
 
   <!-- Annotation config -->
   <context:annotation-config/>
-  <context:component-scan base-package="$groupId.$artifactId"/>
+  <context:component-scan base-package="$package"/>
 
   <!-- Property placeholder configs -->
   <context:property-placeholder location="WEB-INF/config/config.properties"/>

@@ -44,7 +44,7 @@ mvn archetype:generate -DarchetypeGroupId=com.dtzq \
   -DarchetypeVersion=1.0-SNAPSHOT \
   -DgroupId=com.dtzq \
   -DartifactId=the_artifact_id \
-  -DpackageName=the_package_name \
+  -Dpackage=the_package_name \
   -DjndiDataSource=data_source_name \
   -DlogPath=/path/to/log.file
 
@@ -65,9 +65,10 @@ October 15, 2011
 * Removed unneeded imports.
 * Updated taglib prefix, update web.xml verson to 2.5.
 * Rename web-beans.xml to application-beans.xml. Minor change but seemed redundant due to the dispatcher servlet beans configuration.
-* Updated context path in context.xml to reflect the artifact id
-* Removed unused AOP namespace from datasource-beans.xml
-* Update taglib definition into jsp-config block in web.xml
-* Update path to application-beans.xml in web.xml
+* Updated context path in context.xml to reflect the artifact id.
+* Removed unused AOP namespace from datasource-beans.xml.
+* Update taglib definition into jsp-config block in web.xml.
+* Update path to application-beans.xml in web.xml.
+* Fixed "Use" section to reflect "-Dpackage" instead of "-DpackageName", fixed refs that were using artifactId and groupId with just the package variable.
 
 
