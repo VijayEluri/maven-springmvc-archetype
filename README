@@ -72,3 +72,4 @@ October 15, 2011
 * Fixed "Use" section to reflect "-Dpackage" instead of "-DpackageName", fixed refs that were using artifactId and groupId with just the package variable.
 * Removed incomplete surefire definition in pom.xml.
 * Remove usage of warDirectory from tomcat-maven-plugin.
+* Remove maven-dependency-plugin, this was only used when using a warDirectory of src/main/webapp with the tomcat plugin. Use the standard target directory.
