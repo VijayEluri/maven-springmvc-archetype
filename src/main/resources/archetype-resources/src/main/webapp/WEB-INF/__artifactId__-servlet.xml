@@ -15,7 +15,9 @@
 
   <!-- Annotation config -->
   <context:annotation-config/>
-  <context:component-scan base-package="$groupId.$artifactId"/>
+  <context:component-scan base-package="${package}">
+      <context:include-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
+  </context:component-scan>
 
   <!-- Setup annotation based controller handling -->
   <beans:bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" p:cacheSeconds="0"/>

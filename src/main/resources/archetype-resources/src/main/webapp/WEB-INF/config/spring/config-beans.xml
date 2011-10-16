@@ -10,7 +10,10 @@
 
   <!-- Annotation config -->
   <context:annotation-config/>
-  <context:component-scan base-package="$package"/>
+  <context:annotation-config/>
+  <context:component-scan base-package="${package}">
+      <context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
+  </context:component-scan>
 
   <!-- Property placeholder configs -->
   <context:property-placeholder location="WEB-INF/config/config.properties"/>
