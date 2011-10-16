@@ -73,3 +73,4 @@ October 15, 2011
 * Removed incomplete surefire definition in pom.xml.
 * Remove usage of warDirectory from tomcat-maven-plugin.
 * Remove maven-dependency-plugin, this was only used when using a warDirectory of src/main/webapp with the tomcat plugin. Use the standard target directory.
+* Update of some pom.xml properties (version number centralization).

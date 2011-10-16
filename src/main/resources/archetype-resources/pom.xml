@@ -7,6 +7,12 @@
   <packaging>war</packaging>
   <name>${artifactId}</name>
   <description>${artifactId} - ${version}</description>
+  <properties>
+    <spring.version>3.0.0.RELEASE</spring.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <compiler.source.version>1.6</compiler.source.version>
+    <compiler.target.version>1.6</compiler.target.version>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -142,15 +148,14 @@
     </dependency>
   </dependencies>
   <build>
-    <outputDirectory>src/main/webapp/WEB-INF/classes</outputDirectory>
     <finalName>${artifactId}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>${compiler.source.version}</source>
+          <target>${compiler.target.version}</target>
         </configuration>
       </plugin>
       <plugin>
@@ -176,8 +181,4 @@
       </plugin>
     </plugins>
   </reporting>
-  <properties>
-    <spring.version>3.0.0.RELEASE</spring.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 </project>
