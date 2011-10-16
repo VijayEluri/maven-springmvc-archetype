@@ -77,11 +77,13 @@
     <url-pattern>/index.html</url-pattern>
   </servlet-mapping>
 
-  <!-- Tag libs -->
-  <taglib>
-    <taglib-uri>/spring</taglib-uri>
-    <taglib-location>/WEB-INF/taglib/spring.tld</taglib-location>
-  </taglib>
+  <jsp-config>
+    <!-- Tag libs -->
+    <taglib>
+      <taglib-uri>/spring</taglib-uri>
+      <taglib-location>/WEB-INF/taglib/spring.tld</taglib-location>
+    </taglib>
+  </jsp-config>
 
   <!-- Session timeout -->
   <session-config>
