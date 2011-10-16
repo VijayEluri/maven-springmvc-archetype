@@ -68,4 +68,6 @@ October 15, 2011
 * Updated context path in context.xml to reflect the artifact id
 * Removed unused AOP namespace from datasource-beans.xml
 * Update taglib definition into jsp-config block in web.xml
+* Update path to application-beans.xml in web.xml
+
 
