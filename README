@@ -46,7 +46,7 @@ mvn archetype:generate \
   -DarchetypeGroupId=com.dtzq \
   -DarchetypeArtifactId=maven-springmvc-archetype \
   -DarchetypeVersion=1.1-SNAPSHOT \
-  -DgroupId=com.dtzq \
+  -DgroupId=your_group_id \
   -DartifactId=the_artifact_id \
   -Dpackage=the_package_name
 
