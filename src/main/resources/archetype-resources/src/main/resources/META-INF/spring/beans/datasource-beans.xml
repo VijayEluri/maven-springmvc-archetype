@@ -4,25 +4,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans:beans
-    xmlns:beans="http://www.springframework.org/schema/beans"
-    xmlns:tx="http://www.springframework.org/schema/tx"
-    xmlns:p="http://www.springframework.org/schema/p"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:jee="http://www.springframework.org/schema/jee"
-    xsi:schemaLocation="
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:jee="http://www.springframework.org/schema/jee"
+        xsi:schemaLocation="
                         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
                         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
                         http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
 
-  <!-- Annotation marked transactions -->
-  <tx:annotation-driven/>
+    <!-- Annotation marked transactions -->
+    <tx:annotation-driven/>
 
-  <!-- Use simple JDBC transaction manager -->
-  <beans:bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" p:dataSource-ref="dataSource"/>
+    <!-- Use simple JDBC transaction manager -->
+    <beans:bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" p:dataSource-ref="dataSource"/>
 
-  <!-- Create JdbcTemplate -->
-  <beans:bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSource"/>
+    <!-- Create JdbcTemplate -->
+    <beans:bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSource"/>
 
-  <!-- Create the data source -->
-  <jee:jndi-lookup id="dataSource" jndi-name="${symbol_dollar}{jndi.jdbc.datasource}"/>
+    <!-- Create the data source -->
+    <jee:jndi-lookup id="dataSource" jndi-name="${symbol_dollar}{jndi.jdbc.datasource}"/>
 </beans:beans>
