@@ -36,7 +36,7 @@
   <!-- Spring log4j configuration -->
   <context-param>
     <param-name>log4jConfigLocation</param-name>
-    <param-value>/WEB-INF/config/log4j/log4j.properties</param-value>
+    <param-value>classpath:META-INF/log4j/log4j.properties</param-value>
   </context-param>
 
   <!-- Spring log4j listener -->
@@ -47,7 +47,7 @@
   <!-- Spring context configuration -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>/WEB-INF/config/spring/application-beans.xml</param-value>
+    <param-value>classpath:META-INF/spring/beans/application-beans.xml</param-value>
   </context-param>
 
   <!-- Spring context listener -->
