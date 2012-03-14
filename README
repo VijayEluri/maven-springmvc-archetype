@@ -1,8 +1,6 @@
 Summary
 -------
-Maven archetype providing a pre-configured Spring MVC setup out of the box.
-
-The setup represents how I like things configured for a quick setup so YMMV.
+Maven archetype providing a pre-configured Spring MVC setup out of the box. The setup represents how I like things configured for a quick setup so YMMV.
 
 This is my first archetype, feel free to send patches if you find something that can be improved.
 
@@ -27,7 +25,8 @@ Some features that work out of the box are:
 * UTF-8 character encoding filter for web pages.
 * Spring taglib support.
 * i18n support via Spring MessageSource.
-* JNDI configured DataSource, JdbcTemplate and TransactionManager configuration.
+* Basic DataSource configuration, JdbcTemplate and TransactionManager configuration. Its up to you to configure the dataSource
+  in datasource-beans.xml for persistence to actually do something.
 * PropertyPlaceholder support.
 * Maven profiles - dev is the default, customize and extend the dev config.properties as desired and add new profiles as needed.
 
@@ -52,6 +51,8 @@ mvn archetype:generate \
 
 Answer the questions and the build will end up in a directory named after your artifact ID.
 
+Configure the dataSource bean in datasource-beans.xml to match your database configuration.
+
 cd $artifactId ; mvn clean compile package
 
 A WAR ready for deployment will be in target/ as $artifactId.war. If you have say tomcat running, simply run 'mvn tomcat:exploded' to deploy and test it.
@@ -59,6 +60,9 @@ A WAR ready for deployment will be in target/ as $artifactId.war. If you have sa
 
 Change log:
 --
+March 13, 2011:
+* Update datasource configuration / remove JNDI lookup to work out of the box with Cloud Foundry auto reconfiguration.
+
 October 15, 2011:
 * General updates to this README.
 * Update version to 1.1-SNAPSHOT.
