@@ -15,7 +15,7 @@ Features
 Some features that work out of the box are:
 
 * Bare bones Spring MVC controller and a simple test.
-* Tomcat ready (maven plugin and basic context.xml with JNDI datasource based on artifactId).
+* Tomcat ready (maven plugin).
 * Annotation driven Spring MVC controllers.
 * Component scan configuration to automatically configure non-Controller stereotype annotated beans.
 * Configured ContentNegotiatingViewResolver, with JSON as a registered media type.
@@ -60,6 +60,9 @@ A WAR ready for deployment will be in target/ as $artifactId.war. If you have sa
 
 Change log:
 --
+June 24, 2012:
+* Update README.
+
 March 13, 2011:
 * Update datasource configuration / remove JNDI lookup to work out of the box with Cloud Foundry auto reconfiguration.
 
