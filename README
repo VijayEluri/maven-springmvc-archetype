@@ -17,18 +17,16 @@ Some features that work out of the box are:
 * Bare bones Spring MVC controller and a simple test.
 * Tomcat ready (maven plugin).
 * Annotation driven Spring MVC controllers.
-* Component scan configuration to automatically configure non-Controller stereotype annotated beans.
 * Configured ContentNegotiatingViewResolver, with JSON as a registered media type.
 * JSTL view resolver.
 * Cookie based locale resolver / interceptor.
-* Annotation driven transaction support.
+* Transaction support.
 * UTF-8 character encoding filter for web pages.
 * Spring taglib support.
 * i18n support via Spring MessageSource.
 * Basic DataSource configuration, JdbcTemplate and TransactionManager configuration. Its up to you to configure the dataSource
   in datasource-beans.xml for persistence to actually do something.
 * PropertyPlaceholder support.
-* Maven profiles - dev is the default, customize and extend the dev config.properties as desired and add new profiles as needed.
 
 
 Local Install
@@ -64,6 +62,12 @@ Change log:
 --
 June 24, 2012:
 * Update README.
+* Updated Spring to 3.1.0-RELEASE.
+* Updated archetype version to 1.2-SNAPSHOT.
+* Removed build profiles.
+* Removed custom log4j file, moved to root of classpath, use stdout logger by default
+* Remove annotation driven transactions and context scan of non @Component beans. Use standard XML wiring instead.
+* Moved config.properties into the spring configuration directory.
 
 March 13, 2011:
 * Update datasource configuration / remove JNDI lookup to work out of the box with Cloud Foundry auto reconfiguration.
