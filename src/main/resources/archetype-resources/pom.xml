@@ -8,7 +8,7 @@
     <name>${artifactId}</name>
     <description>${artifactId} - ${version}</description>
     <properties>
-        <spring.version>3.0.0.RELEASE</spring.version>
+        <spring.version>3.1.0.RELEASE</spring.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <compiler.source.version>1.6</compiler.source.version>
         <compiler.target.version>1.6</compiler.target.version>
