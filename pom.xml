@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.dtzq</groupId>
     <artifactId>maven-springmvc-archetype</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
     <name>maven-springmvc-archetype</name>
     <properties>
@@ -29,3 +29,4 @@
         </pluginManagement>
     </build>
 </project>
+
