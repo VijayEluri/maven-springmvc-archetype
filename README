@@ -34,7 +34,7 @@ Some features that work out of the box are:
 Local Install
 -------------
 cd maven-springmvc-archetype
-mvn clean compile package install
+mvn install
 
 
 Use
@@ -53,7 +53,7 @@ Answer the questions and the build will end up in a directory named after your a
 
 Configure the dataSource bean in datasource-beans.xml to match your database configuration.
 
-cd $artifactId ; mvn clean compile package
+cd $artifactId ; mvn package
 
 A WAR ready for deployment will be in target/ as $artifactId.war. If you have say tomcat running, simply run 'mvn tomcat:exploded' to deploy and test it.
 
