@@ -14,4 +14,7 @@
 
     <!-- Datasource beans -->
     <beans:import resource="datasource-beans.xml"/>
+
+    <!-- Add other bean imports for service definitions etc here -->
 </beans:beans>
+
