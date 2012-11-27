@@ -22,7 +22,7 @@ public class IndexController {
      *
      * @return {@link ModelAndView} the {@link ModelAndView} used to render the index page
      */
-    @RequestMapping(value = { "/", "/index.html", "/index.htm", "/index" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/", "/index.html", "/index.htm" }, method = RequestMethod.GET)
     public ModelAndView renderIndexPage() {
         return new ModelAndView(INDEX_VIEW_NAME);
     }
